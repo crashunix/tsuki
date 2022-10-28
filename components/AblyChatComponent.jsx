@@ -55,7 +55,7 @@ const AblyChatComponent = () => {
         <div className={styles.chatHolder}>
             <div className={`flex flex-col`}>
                 {messages}
-                <div ref={(element) => { messageEnd = element; }}></div> // empty element to control scroll to bottom
+                <div ref={(element) => { messageEnd = element; }}></div>
             </div>
             <form onSubmit={handleFormSubmission} className={styles.form}>
                 <textarea
